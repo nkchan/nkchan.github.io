@@ -7,9 +7,10 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
+        var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         $('html, body').animate({
           scrollTop: (target.offset().top - 56)
-        }, 1000, "easeInOutExpo");
+        }, reduceMotion ? 0 : 350, "easeInOutExpo");
         return false;
       }
     }

@@ -1,12 +1,59 @@
-/*!
- * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
- */
-header {
-  padding: 156px 0 100px;
+/* Warm, quiet profile layout. */
+:root { --paper: #f6f3ec; --ink: #302e2a; --muted: #686157; --accent: #775239; --line: #ded8cc; }
+body { background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; font-size: 16px; line-height: 1.9; }
+a { color: var(--accent); text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+a:hover { color: #513722; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.content-width { width: calc(100% - 48px); max-width: 960px; margin: 0 auto; }
+.navbar { background: var(--paper); border-bottom: 1px solid var(--line); padding: .75rem 1rem; }
+.navbar-brand { font-size: 1rem; font-weight: 600; letter-spacing: .02em; text-decoration: none; }
+.navbar-light .navbar-nav .nav-link { color: var(--muted); font-size: .85rem; text-decoration: none; padding-right: .7rem; padding-left: .7rem; }
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active { color: var(--accent); }
+.hero { padding: 150px 0 80px; }
+.hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 64px; align-items: center; }
+h1, h2, h3 { font-weight: 600; line-height: 1.5; }
+h1 { font-size: 2.8rem; letter-spacing: .12em; margin-bottom: 28px; }
+.name-en { display: block; font-size: 1rem; letter-spacing: .04em; margin-top: 12px; font-weight: 400; color: var(--muted); }
+.hero-description { font-size: 1.25rem; line-height: 1.9; }
+.portrait { display: block; width: 150px; height: auto; border-radius: 4px; }
+.personal-note { color: var(--muted); margin-top: 24px; font-size: .95rem; }
+.eyebrow { color: var(--muted); font-size: .75rem; font-weight: 600; letter-spacing: .16em; margin-bottom: 14px; }
+section { padding: 68px 0; border-top: 1px solid var(--line); scroll-margin-top: 85px; }
+#about, #url { scroll-margin-top: 85px; }
+h2 { font-size: 1.75rem; margin-bottom: 36px; }
+h3 { font-size: 1.1rem; margin-bottom: 16px; }
+p { margin-bottom: 16px; }
+.expertise-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.tech-list { font-size: .8rem; color: var(--muted); line-height: 1.9; }
+.project { padding: 32px 0; border-bottom: 1px solid var(--line); }
+.project:first-of-type { padding-top: 0; }
+.project-period, .source-note { color: var(--muted); font-size: .8rem; }
+.project h3 { font-size: 1.3rem; }
+.project dl { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 10px 20px; margin-bottom: 0; }
+dt { font-weight: 600; }
+dd { margin: 0; }
+.source-note { margin: 20px 0 0; }
+ul { padding-left: 1.4em; }
+li { margin-bottom: 14px; }
+#presen h3:not(:first-of-type), #rekireki h3:not(:first-of-type) { margin-top: 32px; }
+.timeline { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 18px 24px; }
+.timeline dt { font-size: .9rem; color: var(--muted); font-weight: 400; }
+footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: .8rem; }
+footer p { margin: 0; }
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 1100; background: var(--paper); padding: 8px 16px; }
+.skip-link:focus { top: 8px; }
+@media (max-width: 767px) {
+  .hero { padding: 120px 0 48px; }
+  .hero-layout { grid-template-columns: 1fr; gap: 24px; }
+  .portrait { width: 110px; }
+  h1 { font-size: 2.2rem; }
+  .hero-description { font-size: 1.1rem; }
+  .desktop-break { display: none; }
+  section { padding: 48px 0; }
+  h2 { font-size: 1.5rem; margin-bottom: 28px; }
+  .expertise-grid { grid-template-columns: 1fr; gap: 24px; }
+  .project dl, .timeline { grid-template-columns: 1fr; gap: 6px; }
+  .project dd, .timeline dd { margin-bottom: 12px; }
+  .project h3 { font-size: 1.15rem; }
 }
-
-section {
-  padding: 150px 0;
-}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

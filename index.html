@@ -1,109 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Profile</title>
-
-  <!-- Bootstrap core CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="永島薫のプロフィール。データセンター・バックボーンネットワークの設計・構築・運用、自動化やAIによる運用改善、登壇・発信を紹介します。">
+  <meta name="author" content="永島 薫">
+  <title>永島 薫 | Kaoru Nagashima</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
-
 </head>
-
 <body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" aria-label="メインナビゲーション">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Profile: Kaoru Nagashima</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Kaoru Nagashima</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="メニューを開閉">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#url">SNSとかブログとか</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#presen">成果みたいなもの</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#rekireki">学歴とか職歴</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">自己紹介</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">得意分野</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">取り組み</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#presen">登壇・発信</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#rekireki">経歴</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">連絡先</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>ポートフォリオのようなもの</h1>
-      <p class="lead">自分のことがわかるページ</p>
-    </div>
-  </header>
-
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About me</h2>
-          <img src="images/kao.jpg"  align="right" width="170" height="220">
-          <br>
-          <ul>
-            <li>なまえ: 永島 薫(Kaoru Nagashima)</li>
-            <li>データセンターネットワーク,バックボーンネットワーク</li>
-            <li>好きなこと: 旅行，ゲーム，温泉</li>
-          </ul>  
-          <br><br><br><br>
-          <p class="lead">難しいことに挑戦するほうが燃えるタイプです。いろんなひととお話するのが好きで、ちょこちょこいろんなところに出没します．Twitterはよくしゃべります．</p>
+  <main id="main">
+    <header class="hero" id="about">
+      <div class="content-width hero-layout">
+        <div>
+          <p class="eyebrow">NETWORK ENGINEER</p>
+          <h1>永島 薫<span class="name-en">Kaoru Nagashima</span></h1>
+          <p class="hero-description">データセンター・バックボーンネットワークの<br class="desktop-break">設計・構築・運用に携わっています。</p>
+          <p>ネットワークを安定して支えることに加え、自動化やAIを使った運用改善にも取り組んでいます。技術への理解と、関係者と協力してプロジェクトを進める力を大切にしています。</p>
+          <p class="personal-note">旅行、ゲーム、温泉が好きです。難しいことに挑戦すること、いろいろな人と話すことも好きです。</p>
+        </div>
+        <img class="portrait" src="images/kao.jpg" width="170" height="220" alt="永島薫の顔写真">
+      </div>
+    </header>
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="content-width">
+        <p class="eyebrow">EXPERTISE</p>
+        <h2 id="skills-title">得意分野</h2>
+        <div class="expertise-grid">
+          <article><h3>ネットワーク設計・運用</h3><p>要件定義から設計、構築、検証、運用まで。データセンターとバックボーンを支えるネットワークに携わっています。</p><p class="tech-list">BGP / OSPF / MPLS / DCI<br>Junos OS / Cisco IOS-XR / Arista EOS</p></article>
+          <article><h3>自動化・AI活用</h3><p>繰り返す作業や運用の課題を見つけ、AnsibleやCI/CDで改善。AIも活用しながら、日々の業務をより良くする方法を考えています。</p><p class="tech-list">Ansible / CI/CD</p></article>
+          <article><h3>プロジェクト推進</h3><p>PMO・サブプロジェクトリードとして、進捗や課題、リスクを整理。相手の立場や事情を理解し、関係者との合意形成を図りながら進めます。</p><p class="tech-list">プロジェクト管理 / チームマネジメント<br>部門間連携 / 社内外との調整</p></article>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="url" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>いろんなリンク</h2>
-          <p class="lead">各種SNSへのリンクです.</p>
-          <ul>
-            <li>Twitter: <a href="https://twitter.com/kaoru_nkchan">@kaoru_nkchan</a> </li>
-            <li>Facebook: <a href="https://www.facebook.com/KaoruNagasima">こちら</a> </li>
-            <li>LinkedIn: <a href="www.linkedin.com/in/kaorunagashima">こちら</a> </li>
-            <li>Speaker Deck: <a href="https://speakerdeck.com/nkchan">nkchan</a> </li>
-            <li>Github: <a href="https://github.com/nkchan">nkchan</a> </li>
-          </ul>
-
-          <h2>ブログのリンク</h2>
-          <ul>
-            <li>tech blog: <a href="https://kaoru1615.hatenablog.com/">こちら</a> </li>
-            <li>思ったことをつらつらと書く: <a href="https://nkchan-diary.hatenablog.com/">こちら</a> </li>
-          </ul>
-
-        </div>
+    </section>
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="content-width">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2 id="projects-title">代表的な取り組み</h2>
+        <article class="project">
+          <p class="project-period">2024年4月 — 2026年3月</p>
+          <h3>旧LINE・旧ヤフーのネットワーク統合</h3>
+          <p>異なるアーキテクチャを持つデータセンター間ネットワークの物理統合に取り組みました。</p>
+          <dl><dt>役割</dt><dd>PMO兼サブプロジェクトリード。依存するタスクや課題を整理し、リソース調整と担当拠点の冗長構成・切替リスクの検証を推進。</dd><dt>成果</dt><dd>関係者と連携し、無事故で物理統合を完遂しました。</dd></dl>
+        </article>
+        <article class="project">
+          <p class="project-period">2022年4月 — 2022年10月</p>
+          <h3>Ansibleによるアラート静観ルール更新の自動化</h3>
+          <p>頻繁に発生するルール更新の手作業と、更新漏れのリスクを改善しました。</p>
+          <dl><dt>役割</dt><dd>主担当として設計・構築・テストとCI/CDパイプラインの構築を担当。</dd><dt>成果</dt><dd>更新作業を完全自動化し、更新漏れゼロを達成。チームの運用負荷を軽減しました。</dd></dl>
+        </article>
+        <p class="source-note">職務・実績の情報は2026年8月27日時点の資料に基づきます。</p>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>登壇</h2>
+    </section>
+    <section id="presen" aria-labelledby="presen-title">
+      <div class="content-width">
+        <p class="eyebrow">TALKS &amp; WRITING</p>
+        <h2 id="presen-title">登壇・発信</h2>
+        <h3>登壇</h3>
           <ul>
             <li>合併後のインフラ環境におけるアラートフローの問題点洗い出しと改善をした話、<a href="https://qunog.connpass.com/event/330206/">QUNOG30</a>: <a href="https://speakerdeck.com/lycorptech_jp/he-bing-hou-noinhurahuan-jing-niokeruaratohuronowen-ti-dian-xi-ichu-sitogai-shan-wositahua">speakerdeck</a></li>
             <li>ansibleとCI/CDで進めるサーバ構築/運用、<a href="https://qunog.connpass.com/event/285821/">QUNOG26</a>: <a href="https://www.docswell.com/s/ydnjp/Z8GWWW-2023-07-26-115048">docswell</a></li>
@@ -111,63 +84,52 @@
             <li> サーバに全力で名前をつけている話、ヤフー株式会社2021卒内定者LT大会，登壇資料: <a href="https://speakerdeck.com/nkchan/sabaniquan-li-deming-qian-wotuketeiruhua">speakerdeck</a></li>
             <li>"IPv6が使われていない理由を探した ~Perlのことも調査してみて思ったこと~" <a href="https://fukuokapm.connpass.com/event/119196/">Fukuoka Perl Workshop #28 むりやり蘇生！！スペシャル</a> 登壇資料: <a href="https://speakerdeck.com/nkchan/ipv6gashi-wareteinaili-you-wotan-sita">speakerdeck</a> </li>
           </ul>
-          <h2>作ったもの</h2>
+
+        <h3>ブログ</h3>
           <ul>
-            <li> <a href="https://github.com/nkchan/sls-py-monitor-v2">Serverless Webmonitor</a></li>
+            <li>tech blog: <a href="https://kaoru1615.hatenablog.com/">こちら</a> </li>
+            <li>思ったことをつらつらと書く: <a href="https://nkchan-diary.hatenablog.com/">こちら</a> </li>
           </ul>
-	  <h2>その他</h2>
+
+        <h3>作ったもの</h3>
+        <ul><li><a href="https://github.com/nkchan/sls-py-monitor-v2">Serverless Webmonitor</a></li></ul>
+        <h3>その他の活動</h3>
 	  <ul>
 	      <li>YAPC::Japan::Oneline 2022 懇親会クイズ企画回答者 感想ブログ:<a href="https://kaoru1615.hatenablog.com/entry/2022/03/10/083040">YAPC::Japan::Oneline 2022 参加したり回答者で登場しました</a> </li>
 	  </ul>
-        </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>学歴</h2>
+    </section>
+    <section id="rekireki" aria-labelledby="career-title">
+      <div class="content-width">
+        <p class="eyebrow">BACKGROUND</p>
+        <h2 id="career-title">経歴</h2>
+        <h3>職歴</h3>
+        <dl class="timeline"><dt>2023年10月 — 現在</dt><dd>LINEヤフー株式会社</dd><dt>2021年4月 — 2023年9月</dt><dd>ヤフー株式会社</dd></dl>
+        <h3>学歴</h3>
+        <dl class="timeline"><dt>2019年4月 — 2021年3月</dt><dd>九州工業大学大学院 情報工学府 先端情報工学専攻<br>電子情報工学専門分野（修士）</dd><dt>2015年4月 — 2019年3月</dt><dd>九州工業大学 情報工学部 電子情報工学科（学士）</dd></dl>
+      </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="content-width" id="url">
+        <p class="eyebrow">ELSEWHERE &amp; CONTACT</p>
+        <h2 id="contact-title">リンク・連絡先</h2>
+        <p>ご連絡は、<a href="https://twitter.com/kaoru_nkchan">X / Twitter</a> または <a href="https://www.facebook.com/KaoruNagasima">Facebook</a> のメッセージからお願いします。</p>
           <ul>
-            <li>2012年4月~2015年3月 福岡県立光陵高校(33期)</li>
-            <li>2015年4月~2019年3月 九州工業大学 情報工学部 電子情報工学科(学士)</li>
-            <li>2019年4月~2021年3月 九州工業大学大学院 情報工学府 先端情報工学専攻 電子情報工学専門分野(修士)</li>
+            <li>X / Twitter: <a href="https://twitter.com/kaoru_nkchan">@kaoru_nkchan</a> </li>
+            <li>Facebook: <a href="https://www.facebook.com/KaoruNagasima">こちら</a> </li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/kaorunagashima">こちら</a> </li>
+            <li>Speaker Deck: <a href="https://speakerdeck.com/nkchan">nkchan</a> </li>
+            <li>GitHub: <a href="https://github.com/nkchan">nkchan</a> </li>
           </ul>
-          <h2>職歴</h2>
-		  <ul>
-            <li>2021年4月~ 2023年9月 ヤフー株式会社</li>
-            <li>2023年10月~ 現在 LINEヤフー株式会社</li>
-          </ul>
-        </div>
+
+
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact</h2>
-          <p class="lead">なにかありましたら，<a href="https://twitter.com/kaoru_nkchan">Twitter</a>か，<a href="https://www.facebook.com/KaoruNagasima">Facebook </a>にメッセージください.</p>
-        </div>
-      </div>
-    </div>
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Kaoru Nagashima 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
+    </section>
+  </main>
+  <footer><div class="content-width"><p>© Kaoru Nagashima</p></div></footer>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-
 </body>
-
 </html>
